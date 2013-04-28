@@ -8,4 +8,8 @@ function showPic(whichpic){
 	//以下是追加相对应的属性值
 	placeholder.setAttribute("src",source);
 	placeholder.setAttribute("title",title);
+	
+	var description = document.getElementById("description");
+	//涉及firstChild,lastChild,nodeValue的基本概念
+	description.firstChild.nodeValue = title;
 }
